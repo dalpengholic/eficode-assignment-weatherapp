@@ -10,6 +10,7 @@ services:
     volumes:
       - node_modules_backend:/home/weather/backend/node_modules 
       - ./backend:/home/weather/backend
+    command: ["npm","run","dev"]
 
   frontend-dev:
     build: ./frontend
