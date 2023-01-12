@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  backend-dev:
+    build: ./backend
+    container_name: backend-dev
+    env_file: .env
+    ports:
+      - '9000:9000'  
+    volumes:
+      - node_modules_backend:/home/weather/backend/node_modules 
+      - ./backend:/home/weather/backend
+
+  frontend-dev:
+    build: ./frontend
+    container_name: frontend-dev
+    ports:
+      - '8000:8000'
+    volumes:
+      - node_modules_frontend:/home/weather/frontend/node_modules
+      - ./frontend:/home/weather/frontend    
+    depends_on:
+      - backend-dev  
+
+volumes:
+  node_modules_backend:
+  node_modules_frontend: 
