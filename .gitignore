@@ -1,0 +1,5 @@
+# Block to upload to github repository
+
+node_modules
+.env
+*.log
