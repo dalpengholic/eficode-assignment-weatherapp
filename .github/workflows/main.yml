@@ -34,7 +34,7 @@ jobs:
         id: docker_build_backend
         uses: docker/build-push-action@v2
         with:
-          context: .
+          context: ./backend
           file: ./backend/Dockerfile
           push: true
           tags: dalpengholic/weatherapp_backend-prod:${{ steps.vars.outputs.short_sha }}
@@ -43,7 +43,7 @@ jobs:
         id: docker_build_frontend
         uses: docker/build-push-action@v2
         with:
-          context: .
+          context: ./frontend
           file: ./frontend/Dockerfile
           push: true
           tags: dalpengholic/weatherapp_frontend-prod:${{ steps.vars.outputs.short_sha }}
