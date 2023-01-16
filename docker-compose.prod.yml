@@ -2,14 +2,14 @@ version: '3'
 
 services:
   backend-prod:
-    image: dalpengholic/weatherapp_backend-prod:5156273
+    image: dalpengholic/weatherapp_backend-prod:latest
     env_file: .prod.env
     ports:
       - '9000:9000'
     command: ["npm", "start"]
 
   frontend-prod:
-    image: dalpengholic/weatherapp_frontend-prod:5156273
+    image: dalpengholic/weatherapp_frontend-prod:latest
     env_file: .prod.env
     ports:
       - '8000:8000'
