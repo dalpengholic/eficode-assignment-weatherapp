@@ -37,7 +37,9 @@ jobs:
           context: ./backend
           file: ./backend/Dockerfile
           push: true
-          tags: dalpengholic/weatherapp_backend-prod:${{ steps.vars.outputs.short_sha }}
+          tags: |
+            dalpengholic/weatherapp_backend-prod:${{ steps.vars.outputs.short_sha }}
+            dalpengholic/weatherapp_backend-prod:latest
           
       - name: Build and push frontend app
         id: docker_build_frontend
@@ -46,4 +48,7 @@ jobs:
           context: ./frontend
           file: ./frontend/Dockerfile
           push: true
-          tags: dalpengholic/weatherapp_frontend-prod:${{ steps.vars.outputs.short_sha }}
+          tags: |
+            dalpengholic/weatherapp_frontend-prod:${{ steps.vars.outputs.short_sha }}
+            dalpengholic/weatherapp_frontend-prod:latest
+            
