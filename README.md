@@ -1,6 +1,11 @@
 # eficode-assignment-weatherapp
 This is a repository for submitting an Eficode assignment about weatherapp
 
+## How to use this repository for development
+- Please refer [README.md at dev branch](https://github.com/dalpengholic/eficode-assignment-weatherapp/blob/dev/README.md).
+
+## How to use this repository for deployment
+- Thie subject is handled by my different repo at [eficode-assignment-weatherapp-ansible](https://github.com/dalpengholic/eficode-assignment-weatherapp-ansible)
 
 ## How I understand this assignment
 - General purpose
