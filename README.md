@@ -55,5 +55,13 @@ $ docker-compose up -d
 - Backend source code file: ..../eficode-assignment-weatherapp/backend/src/index.js
 - Frontend source code file: ..../eficode-assignment-weatherapp/frontend/src/index.jsx
 
-7. After adding of fixing codes and testing, update remote dev branch. Merging to the master branch only allowed after an official remote test pipeline
+7. Close docker-compose after updating codes.
+```Shell
+# With sudo
+$ sudo docker-compose down
+# Without sudo (User already in the docker group)
+$ docker-compose down
+```
+
+8. After adding of fixing codes and testing, update remote dev branch. Merging to the master branch only allowed after an official remote test pipeline
 
