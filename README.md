@@ -1,6 +1,6 @@
 # eficode-assignment-weatherapp for development
-This dev branch is for providing the same development environment for developer by docker and docker-compose. 
-This README.md gives developers instructions that how to build development environment at local personal laptops or desktops using this branch.
+This dev branch is for providing the same development environment for developers by docker and docker-compose. 
+This README.md gives developers instructions on how to build a development environment at local personal laptops or desktops using this branch.
 
 ### Prerequisite
 1. The applications below have to be installed first.
@@ -16,7 +16,7 @@ APPID=12345678910
 ```
 
 ### How to use
-1. Do git clone from this repository. From your terminal, run one of commands below.
+1. Do git clone from this repository. From your terminal, run one of the commands below.
 ```Shell
 # Using SSH
 $ git clone git@github.com:dalpengholic/eficode-assignment-weatherapp.git
@@ -30,7 +30,7 @@ $ cd eficode-assignment-weatherapp
 $ git checkout dev
 ```
 
-3. Create `.env` at root direcotry of eficode-assignment-weatherapp directory
+3. Create `.env` at root directory of eficode-assignment-weatherapp directory
 ```Shell
 $ pwd
 /home/myuser/eficode-assignment-weatherapp
@@ -47,7 +47,7 @@ $ sudo docker-compose up -d
 $ docker-compose up -d
 ```
 
-5. Check the front and backend working running correctly.
+5. Check the front and backend working correctly.
 - Open browser and two taps. Enter `http://localhost:8000` at one tap, and enter `http://localhost:9000/api/weather`.
 
 
@@ -63,5 +63,5 @@ $ sudo docker-compose down
 $ docker-compose down
 ```
 
-8. After adding of fixing codes and testing, update remote dev branch. Merging to the master branch only allowed after an official remote test pipeline
+8. After adding or fixing codes and testing, update the remote dev branch. Merging to the master branch only allowed after an official remote test pipeline
 
